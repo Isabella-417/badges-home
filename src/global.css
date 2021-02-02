@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+h1{
+    font-family: 'Anton', sans-serif;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+input[type=checkbox]{
+    display: inline;
+}
+
+button {
+    display: block;
+    height: 50px;
+}
+
+button.btn-medium {
+    width: 10em;
+}
+
+button.btn-round{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+button.btn-big {
+    width: 100%;
+}
+
+button.btn-save {
+    background-color: #8dc641;
+    border-color: #8dc641;
+    border-style: solid;
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+button.selectImage {
+    background-color: #15a697;
+    border-color: #15a697;
+    border-style: solid;
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: bold;
+    height: 45px;
+    width: 50%;
+}

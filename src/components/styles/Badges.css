@@ -1,0 +1,54 @@
+
+section.badge {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 40em;
+    margin-top: 2em;
+}
+
+section.badge header {
+    width: 100%;
+    background-color: #F4845F;
+    border-radius: 10px 10px 0px 0px;
+}
+
+section.badge header > img{
+    margin: 0 auto;
+    display: block;
+}
+
+section.badge div.content-badge {
+    align-items: center;
+    background-color: #fff5ee;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 1em 3em;
+}
+
+section.badge div.content-badge h1, img {
+    margin: 0.4em;
+}
+
+section.badge div.content-badge h1 {
+    color: #000000;
+    font-family: 'Lato';
+    font-size: 2.3em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 0.9;
+    max-width: 20px;
+}
+
+section.badge  div.main-info {
+    background-color: #E3E5E1;
+    padding: 0.3em;
+    text-align: center;
+}
+
+section.badge footer { 
+    background-color: #fff5ee;
+    color: #F25C54;
+    font-style: italic;
+    font-weight: bold;
+    padding: 1em;
+    text-align: center;
+}

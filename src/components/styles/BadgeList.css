@@ -1,0 +1,46 @@
+
+
+li {
+   list-style: none;
+   padding-bottom: 20px;
+}
+
+div.personInfoContainer{
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 300px;
+    padding: 2em;
+    width: 100%;
+}
+
+div.infoContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+div.infoContent > div {
+    padding: 0.3em;
+}
+
+div.infoContent > div.names {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+div.infoContent > div.twitterAccount {
+    color: #00acee;
+    font-weight: 700;
+}
+
+div.infoContent > div.twitterAccount::before {
+    background-size: 25px auto;
+    background: url(https://logos-marcas.com/wp-content/uploads/2020/04/Twitter-Logo.png) left center no-repeat;
+    content: '';
+    padding-left: 20px;
+    padding-right: 5px;
+    vertical-align: middle;
+}

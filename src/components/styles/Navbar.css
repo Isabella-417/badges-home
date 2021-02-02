@@ -1,0 +1,34 @@
+nav {
+    background-color: #F4845F;
+    box-shadow: 0 0px 10px -5px;
+    font-size: 1.3em;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bolder;
+}
+
+nav ul  {
+    align-items: center;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 1.2em;
+}
+
+span {
+    color: #f0efeb;
+}
+
+
+.font-weight-light {
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}

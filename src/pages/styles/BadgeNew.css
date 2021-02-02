@@ -1,0 +1,43 @@
+body {
+    background-color:#E3E5E1;
+}
+
+@media (max-width: 950px) {
+    .container {
+      flex-direction: column;
+      align-items: center !important;
+    }
+
+    .BadgeNew_background{
+        background-position: 1% 50% !important;
+        background-size: 250px 250px !important;
+    }
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.BadgeNew_background {
+    background-color: #F7B267;
+    background-image: url("../../images/backgroundHeader.png");
+    background-repeat: no-repeat;
+    background-position: 35% 50%;
+    background-size: 300px 300px;
+    text-align: center;
+    height: 250px; 
+    width: 100%;
+}
+
+h2 {
+    display: inline-block;
+    font-family: 'Anton';
+    letter-spacing: 3px;
+    line-height: 1em;
+    color: #f0efeb;
+    font-size: 3em;
+    width: 200px;
+}

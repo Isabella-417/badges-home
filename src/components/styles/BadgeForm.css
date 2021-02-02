@@ -1,0 +1,67 @@
+div.formContainer { 
+    height: auto;
+    text-align: center;
+    width: 30em;
+}
+
+form.formBadge{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    height: auto;
+    padding: 2em;
+    width: 100%;
+}
+
+hr {
+    border-color: #dae2d9;
+    border-style: double;
+    margin: 2em 0;
+}
+
+h1{
+    color: #283618;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+form.formBadge label {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 0.6em;
+}
+
+form.formBadge label.terms-policy{
+    padding: 1em;
+    font-weight: lighter;
+}
+
+form.formBadge span.highLightService {
+    color: #15a697;
+    font-weight: bold;
+}
+
+form.formBadge input[type=text],input[type=email] {
+    background-color: #f3f8f2;
+    border-color: #E3E5E1;
+    border-radius: 2px;
+    border-style: solid;
+    margin-bottom: 2em;
+    padding: 0.5em;
+    width: 95%;
+}
+
+form.formBadge input[type=checkbox]{
+    padding: 1em;
+}
+
+form.formBadge label, input {
+    display: block;
+    text-align: left;
+}
+
+
+button.selectImage{
+    margin: 0 auto;
+    width: 100%;
+}
