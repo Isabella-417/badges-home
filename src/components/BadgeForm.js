@@ -13,7 +13,7 @@ class BadgeForm extends React.Component {
     return (
       <div className="formContainer">
         <h1>NEW ATTENDANT</h1>
-        <form action="" className="formBadge">
+        <form className="formBadge">
           <div className="form-group">
             <label htmlFor="firstName">First Name</label>
             <input

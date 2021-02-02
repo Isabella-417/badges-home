@@ -1,0 +1,22 @@
+figure.notFoundPage {
+  text-align: center;
+}
+
+figure.notFoundPage figcaption {
+  padding-top: 4em;
+}
+
+figure.notFoundPage figcaption h3 {
+  color: #1d252e;
+  font-size: 2em;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  figure.notFoundPage img {
+    height: auto;
+    width: 400px;
+  }
+}

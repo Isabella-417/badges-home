@@ -23,7 +23,7 @@ body {
 
 .BadgeNew_background {
     background-color: #F7B267;
-    background-image: url("../../images/backgroundHeader.png");
+    background-image: url("../../images/identification.svg");
     background-repeat: no-repeat;
     background-position: 35% 50%;
     background-size: 300px 300px;

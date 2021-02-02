@@ -1,8 +1,9 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 import "../global.css";
 import "./styles/Navbar.css";
-import backgroundImage from "../images/backgroundHeader.png";
+import backgroundImage from "../images/backgroundHeader.svg";
 
 class Navbar extends React.Component {
   render() {
@@ -13,10 +14,10 @@ class Navbar extends React.Component {
             <img src={backgroundImage} width="70" alt="logo" />
           </li>
           <li>
-            <a href="/">
-              <span className="font-weight-light">Home</span>
-              <span className="font-weight-bold">Blue</span>
-            </a>
+            <Link to="/">
+              <span className="font-weight-light">Blue</span>
+              <span className="font-weight-bold">Conf</span>
+            </Link>
           </li>
         </ul>
       </nav>

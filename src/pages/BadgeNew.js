@@ -3,7 +3,6 @@ import React from "react";
 import "./styles/BadgeNew.css";
 import BadgeForm from "../components/BadgeForm";
 import Badge from "../components/Badge";
-import Navbar from "../components/Navbar";
 
 class BadgeNew extends React.Component {
   state = { form: {
@@ -26,8 +25,7 @@ class BadgeNew extends React.Component {
 
   render() {
     return (
-      <div>
-        <Navbar />
+      <React.Fragment>
         <div>
           <div className="BadgeNew_background"></div>
           <div className="container">
@@ -42,7 +40,7 @@ class BadgeNew extends React.Component {
             <BadgeForm onChange={this.handleChange} form={this.state.form} />
           </div>
         </div>
-      </div>
+      </React.Fragment>
     );
   }
 }

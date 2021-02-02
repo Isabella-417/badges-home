@@ -8,8 +8,8 @@ class BadgeList extends React.Component {
       <ul>
         {this.props.badges.map((element) => {
           return (
-            <li>
-              <div className="personInfoContainer" key={element.id}>
+            <li key={element.id}>
+              <div className="personInfoContainer" >
                 <div className="profileImageHolder">
                   <img src={element.avatarUrl} alt="person profile" />
                 </div>

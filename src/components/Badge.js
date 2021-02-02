@@ -3,7 +3,7 @@ import React from "react";
 import "./styles/Badges.css";
 
 import avatar from "../images/avatar.png";
-import backgroundImage from "../images/backgroundHeader.png";
+import backgroundImage from "../images/newUser.svg";
 
 class Badge extends React.Component {
   render() {

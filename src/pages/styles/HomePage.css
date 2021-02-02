@@ -1,0 +1,36 @@
+@media (max-width: 900px) {
+  .backgroundHome {
+    display: flex !important;
+    flex-direction: column-reverse;
+  }
+
+  div.welcomeText {
+    margin: 5em 0em;
+  }
+
+  button.btn-started {
+    width: 70%;
+  }
+}
+
+div.backgroundHome {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+div.welcomeText {
+  margin-top: 10em;
+  text-align: center;
+}
+
+div.welcomeText h1,
+p {
+  font-family: "Lato";
+  font-size: 4em;
+  font-weight: bold;
+  line-height: 0.5em;
+}
+
+span.borderTitle {
+  text-shadow: -1px 0 #f4845f, 0 3px #f4845f, 3px 0 #f4845f, 0 -1px #f4845f;
+}

@@ -1,61 +1,82 @@
-import { Component } from "react";
+import { Link } from "react-router-dom";
 
 import React from "react";
-import Navbar from "../components/Navbar";
 import BadgeList from "../components/BadgeList";
 
 import "./styles/Badges.css";
 
 class Badges extends React.Component {
-  state = {
-    data: [
-      {
-        id: "2de30c42-9deb-40fc-a41f-05e62b5939a7",
-        firstName: "Freda",
-        lastName: "Grady",
-        email: "Leann_Berge@gmail.com",
-        jobTitle: "Legacy Brand Director",
-        twitter: "FredaGrady22221-7573",
-        avatarUrl:
-          "https://www.gravatar.com/avatar/f63a9c45aca0e7e7de0782a6b1dff40b?d=identicon",
-      },
-      {
-        id: "d00d3614-101a-44ca-b6c2-0be075aeed3d",
-        firstName: "Major",
-        lastName: "Rodriguez",
-        email: "Ilene66@hotmail.com",
-        jobTitle: "Human Research Architect",
-        twitter: "ajorRodriguez61545",
-        avatarUrl:
-          "https://www.gravatar.com/avatar/d57a8be8cb9219609905da25d5f3e50a?d=identicon",
-      },
-      {
-        id: "63c03386-33a2-4512-9ac1-354ad7bec5e9",
-        firstName: "Daphney",
-        lastName: "Torphy",
-        email: "Ron61@hotmail.com",
-        jobTitle: "National Markets Officer",
-        twitter: "DaphneyTorphy96105",
-        avatarUrl:
-          "https://www.gravatar.com/avatar/e74e87d40e55b9ff9791c78892e55cb7?d=identicon",
-      },
-    ],
-  };
+  constructor(props) {
+    super(props);
+    this.state = { data: [] };
+  }
+
+  componentWillUnmount() {
+    clearTimeout(this.timeoutId);
+  }
+
+  componentDidUpdate(previousProps, previousState) {
+    console.log(previousProps, previousState);
+    console.log(this.props, this.state);
+  }
+
+  componentDidMount() {
+    this.timeoutId = setTimeout(() => {
+      this.setState({
+        data: [
+          {
+            id: "2de30c42-9deb-40fc-a41f-05e62b5939a7",
+            firstName: "Freda",
+            lastName: "Grady",
+            email: "Leann_Berge@gmail.com",
+            jobTitle: "Legacy Brand Director",
+            twitter: "FredaGrady22221-7573",
+            avatarUrl:
+              "https://www.gravatar.com/avatar/f63a9c45aca0e7e7de0782a6b1dff40b?d=identicon",
+          },
+          {
+            id: "d00d3614-101a-44ca-b6c2-0be075aeed3d",
+            firstName: "Major",
+            lastName: "Rodriguez",
+            email: "Ilene66@hotmail.com",
+            jobTitle: "Human Research Architect",
+            twitter: "ajorRodriguez61545",
+            avatarUrl:
+              "https://www.gravatar.com/avatar/d57a8be8cb9219609905da25d5f3e50a?d=identicon",
+          },
+          {
+            id: "63c03386-33a2-4512-9ac1-354ad7bec5e9",
+            firstName: "Daphney",
+            lastName: "Torphy",
+            email: "Ron61@hotmail.com",
+            jobTitle: "National Markets Officer",
+            twitter: "DaphneyTorphy96105",
+            avatarUrl:
+              "https://www.gravatar.com/avatar/e74e87d40e55b9ff9791c78892e55cb7?d=identicon",
+          },
+        ],
+      });
+    }, 3000);
+  }
 
   render() {
     return (
-      <div>
-        <Navbar />
+      <React.Fragment>
         <div className="BadgeNew_background"></div>
         <section className="BadgeContainerList">
           <div className="btn-options">
-            <button className="btn-save btn-medium btn-round">Add</button>
+            <Link
+              to="/badges/new"
+              className="button btn-save btn-medium btn-round"
+            >
+              New Badge
+            </Link>
           </div>
           <div className="badgeContainer">
-              <BadgeList badges={this.state.data}/>
+            <BadgeList badges={this.state.data} />
           </div>
         </section>
-      </div>
+      </React.Fragment>
     );
   }
 }
