@@ -1,8 +1,8 @@
 import React from "react";
 
-import "./styles/Badges.css";
+import Gravatar from "./Gravatar";
 
-import avatar from "../images/avatar.png";
+import "./styles/Badges.css";
 import backgroundImage from "../images/newUser.svg";
 
 class Badge extends React.Component {
@@ -13,7 +13,7 @@ class Badge extends React.Component {
           <img src={backgroundImage} width="100" alt="background" />
         </header>
         <div className="content-badge">
-          <img src={avatar} alt="profile" width="120" />
+        <Gravatar email={this.props.email}/>
           <h1>
             {this.props.firstName} {this.props.lastName}
           </h1>

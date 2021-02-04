@@ -1,80 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
+.text-danger {
+    font-size: 1.5em;
+    color: #e5383b;
+    font-weight: bold;
+    padding: 0.5em;
+}
 
-h1{
-    font-family: 'Anton', sans-serif;
+h1 {
+  font-family: "Anton", sans-serif;
 }
 
 body {
-    font-family: 'Lato', sans-serif;
-    margin: 0;
+  font-family: "Lato", sans-serif;
+  margin: 0;
 }
 
-input[type=checkbox]{
-    display: inline;
+input[type="checkbox"] {
+  display: inline;
 }
 
 button {
-    display: block;
-    height: 50px;
+  display: block;
+  height: 50px;
+}
+
+img.profile-picture {
+  border-radius: 50%;
+  padding: 0.5em;
 }
 
 a.button {
-    display: block;
-    height: 50px;
-    width: 10em;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-    background-color: #8dc641;
-    border-color: #8dc641;
-    border-style: solid;
-    color: #ffffff;
-    font-size: 1.2em;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 0.4em;
+  display: block;
+  height: 50px;
+  width: 10em;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  background-color: #8dc641;
+  border-color: #8dc641;
+  border-style: solid;
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 0.4em;
 }
 
 button.btn-medium {
-    width: 10em;
+  width: 10em;
 }
 
-button.btn-round{
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+button.btn-round {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 button.btn-big {
-    width: 100%;
+  width: 100%;
 }
 
 button.btn-save {
-    background-color: #8dc641;
-    border-color: #8dc641;
-    border-style: solid;
-    color: #ffffff;
-    font-size: 1.2em;
-    font-weight: bold;
+  background-color: #8dc641;
+  border-color: #8dc641;
+  border-style: solid;
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 button.btn-started {
-    width: 20%;
-    border-radius: 10px;
-    margin: 0 auto;
+  width: 20%;
+  border-radius: 10px;
+  margin: 0 auto;
 }
 
 button.selectImage {
-    background-color: #15a697;
-    border-color: #15a697;
-    border-style: solid;
-    color: #ffffff;
-    font-size: 1em;
-    font-weight: bold;
-    height: 45px;
-    width: 50%;
+  background-color: #15a697;
+  border-color: #15a697;
+  border-style: solid;
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: bold;
+  height: 45px;
+  width: 50%;
 }

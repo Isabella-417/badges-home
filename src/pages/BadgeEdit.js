@@ -7,9 +7,9 @@ import PageLoading from "../components/PageLoading";
 
 import "./styles/BadgeNew.css";
 
-class BadgeNew extends React.Component {
+class BadgeEdit extends React.Component {
   state = {
-    loading : false,
+    loading: true,
     error: null,
     form: {
       firstName: "",
@@ -19,6 +19,24 @@ class BadgeNew extends React.Component {
       twitterAccount: "",
       hashtagName: "",
     },
+  };
+
+  componentDidMount() {
+    this.fetchData();
+  }
+
+  fetchData = async () => {
+    this.setState({
+      loading: true,
+      error: null,
+    });
+
+    try {
+      const data = await api.badges.read(this.props.match.params.badgeId);
+      this.setState({ loading: false, form: data });
+    } catch (error) {
+      this.setState({ loading: false, error: error });
+    }
   };
 
   handleChange = (event) => {
@@ -38,10 +56,9 @@ class BadgeNew extends React.Component {
     });
 
     try {
-      await api.badges.create(this.state.form);
-      this.setState({loading: false });
+      await api.badges.update(this.props.match.params.badgeId, this.state.form);
+      this.setState({ loading: false });
       this.props.history.push("/badges");
-      
     } catch (error) {
       this.setState({
         loading: false,
@@ -51,8 +68,8 @@ class BadgeNew extends React.Component {
   };
 
   render() {
-    if(this.state.loading){
-      return <PageLoading />
+    if (this.state.loading) {
+      return <PageLoading />;
     }
     return (
       <React.Fragment>
@@ -68,7 +85,7 @@ class BadgeNew extends React.Component {
               hashtagName={this.state.form.hashtagName || "HASHTAG"}
             />
             <BadgeForm
-              formName="NEW ATTENDANT"
+              formName="EDIT ATTENDANT"
               onChange={this.handleChange}
               onSubmit={this.handleSubmit}
               form={this.state.form}
@@ -81,4 +98,4 @@ class BadgeNew extends React.Component {
   }
 }
 
-export default BadgeNew;
+export default BadgeEdit;

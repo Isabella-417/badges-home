@@ -28,6 +28,11 @@ section.badge div.content-badge h1, img {
     margin: 0.4em;
 }
 
+section.badge div.content-badge img {
+    justify-self: flex-end;
+}
+
+
 section.badge div.content-badge h1 {
     color: #000000;
     font-family: 'Lato';
@@ -43,6 +48,11 @@ section.badge  div.main-info {
     padding: 0.3em;
     text-align: center;
 }
+
+section.badge  div.main-info > p {
+    font-size: 1.5em;
+}
+
 
 section.badge footer { 
     background-color: #fff5ee;

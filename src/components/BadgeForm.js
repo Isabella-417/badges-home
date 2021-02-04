@@ -1,18 +1,17 @@
 import React from "react";
 
 import "./styles/BadgeForm.css";
+import "../global.css";
 
 class BadgeForm extends React.Component {
-
-  handleClick = (event) => {
-    event.preventDefault();
-    console.log(this.state);
+  handleClick = (e) => {
+    console.log("Button was clicked");
   };
 
   render() {
     return (
-      <div className="formContainer">
-        <h1>NEW ATTENDANT</h1>
+      <div onSubmit={this.props.onSubmit} className="formContainer">
+        <h1>{this.props.formName}</h1>
         <form className="formBadge">
           <div className="form-group">
             <label htmlFor="firstName">First Name</label>
@@ -47,7 +46,7 @@ class BadgeForm extends React.Component {
               name="email"
               value={this.props.form.email}
               minLength="5"
-              maxLength="20"
+              maxLength="200"
               required
             />
           </div>
@@ -87,16 +86,14 @@ class BadgeForm extends React.Component {
               required
             />
           </div>
-          <button type="button" className="selectImage" name="selectImage">
-            Profile picture uploaded
-          </button>
+
           <div className="form-group">
             <label className="terms-policy" htmlFor="terms">
               <input
                 type="checkbox"
                 name="terms"
                 onChange={this.props.onChange}
-                />
+              />
               I accept
               <span className="highLightService"> terms of service </span>
               and the <span className="highLightService"> privacy policy</span>
@@ -106,6 +103,7 @@ class BadgeForm extends React.Component {
           <button onClick={this.handleClick} className="btn-save btn-big">
             Save
           </button>
+          {this.props.error && <p class="text-danger">{this.props.error.message}</p>}
         </form>
       </div>
     );
